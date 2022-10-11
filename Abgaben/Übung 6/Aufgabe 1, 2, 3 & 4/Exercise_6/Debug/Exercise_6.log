@@ -1,0 +1,5 @@
+﻿  exercise_6.c
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_6\exercise_6.c(180,9): warning C4476: 'printf' : unknown type field character ',' in format specifier
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_6\exercise_6.c(280,22): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_6\exercise_6.c(282,22): warning C4305: 'function': truncation from 'double' to 'float'
+  Exercise_6.vcxproj -> C:\Users\marco\source\repos\Fist_study_C_program\Debug\Exercise_6.exe

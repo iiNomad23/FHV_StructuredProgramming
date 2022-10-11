@@ -1,0 +1,16 @@
+findMinMaxValues (↓integer[] values, ↑integer maxCount, ↑integer minCount) 
+	minCount = 0
+	maxCount = 0
+	
+	if (values.length > 2)
+		for (integer i = 1; i < values.length - 1; i++) do
+			integer currValue = values[i]
+			
+			if (currValue < values[i - 1] && currValue < values[i + 1])
+				minCount++
+			else if (currValue > values[i - 1] && currValue > values[i + 1])
+				maxCount++
+			end if
+		end for
+	end if
+end findMinMaxValues

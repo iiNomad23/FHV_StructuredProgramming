@@ -1,0 +1,11 @@
+palindrom(↓string text, ↑boolean isPalindrom) {
+    isPalindrom = true
+    integer i = 0
+    
+    while((text.length/2) > i)
+        if(text[i] != text[text.length-(i+1)])
+            isPalindrom = false
+        end if
+        i++
+    end while
+}

@@ -1,0 +1,9 @@
+﻿  leastCommonMultiple.c
+  main.c
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_9\main.c(206,51): warning C4090: 'function': different 'const' qualifiers
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_9\main.c(212,51): warning C4090: 'function': different 'const' qualifiers
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_9\main.c(218,51): warning C4090: 'function': different 'const' qualifiers
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_9\main.c(224,51): warning C4090: 'function': different 'const' qualifiers
+  stringfunc.c
+  Generating Code...
+  Exercise_9.vcxproj -> C:\Users\marco\source\repos\Fist_study_C_program\Debug\Exercise_9.exe

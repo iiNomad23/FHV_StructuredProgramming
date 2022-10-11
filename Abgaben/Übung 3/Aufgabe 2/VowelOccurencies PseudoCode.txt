@@ -1,0 +1,34 @@
+VowelOccurencies(↓string text, ↑integer freqA, ↑integer freqE, ↑integer freqI, ↑integer freqO, ↑integer freqU) {
+	freqA = 0
+	freqE = 0
+	freqI = 0
+	freqO = 0
+	freqU = 0
+		
+	if (text.length > 0) 
+		integer i = 0
+
+		while(i < text.length) do
+			character currChar = text[i]
+		
+			if (currChar == 'A' || currChar == 'a')
+				freqA++
+			else if (currChar == 'E' || currChar == 'e')
+				freqE++
+			else if (currChar == 'I' || currChar == 'i')
+				freqI++
+			else if (currChar == 'O' || currChar == 'o')
+				freqO++
+			else if (currChar == 'U' || currChar == 'u')
+				freqU++
+				
+			i++
+		end while
+	
+		freqA = (freqA * 100) / text.length
+		freqE = (freqE * 100) / text.length
+		freqI = (freqI * 100) / text.length
+		freqO = (freqO * 100) / text.length
+		freqU = (freqU * 100) / text.length
+	end if 
+}

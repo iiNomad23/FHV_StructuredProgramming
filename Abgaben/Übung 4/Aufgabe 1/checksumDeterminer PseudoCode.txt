@@ -1,0 +1,14 @@
+checksumDeterminer (↓integer[] values, ↑integer checksum)
+	checksum = 0
+
+	if (values.length > 0)
+		integer i = 0
+		while (i < values.length)
+			checksum += values[i]
+			i++
+		end while
+	
+		checksum = checksum % 256
+	end if
+end checksumDeterminer
+	

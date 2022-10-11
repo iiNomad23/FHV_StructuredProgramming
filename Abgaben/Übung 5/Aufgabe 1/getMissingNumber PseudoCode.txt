@@ -1,0 +1,15 @@
+getMissingNumber (↓integer[] values, ↑integer missingValue)
+	missingNumber = 0
+	
+	if (values.length > 0)
+		integer sumOfIndexes = 0
+		integer sumOfValues = 0
+
+		for (integer i = 0; i < values.length; i++) do
+			sumOfIndexes += i
+			sumOfValues += values[i]
+		end for
+
+		missingNumber = (sumOfIndexes + values.length) - sumOfValues
+	end if 
+end getMissingNumber

@@ -1,0 +1,8 @@
+﻿  exercise_8.c
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_8\exercise_8.c(90,129): warning C4047: '=': 'int' differs in levels of indirection from 'char *'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_8\exercise_8.c(92,58): warning C4047: '=': 'int' differs in levels of indirection from 'char *'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_8\exercise_8.c(94,72): warning C4047: '=': 'int' differs in levels of indirection from 'char *'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_8\exercise_8.c(96,200): warning C4047: '=': 'int' differs in levels of indirection from 'char *'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_8\exercise_8.c(169,19): warning C4047: 'return': 'char *' differs in levels of indirection from 'int'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_8\exercise_8.c(276,16): warning C4047: 'return': 'char *' differs in levels of indirection from 'int'
+  Exercise_8.vcxproj -> C:\Users\marco\source\repos\Fist_study_C_program\Debug\Exercise_8.exe

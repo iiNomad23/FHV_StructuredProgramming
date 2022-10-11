@@ -1,0 +1,118 @@
+Encode(↓ String text, ↑ String encodedText)
+	String wordOrDelimiter = ""
+	Integer pos = 0
+	Integer numberOfWords = 0
+	
+	encodedText = ""
+	
+	
+	while(<der Text nicht vollständig verarbeitet>)
+		extractWordOrDelimiter(↓ text, ↓↑ pos, ↑wordOrDelimiter, ↓↑ numberOfWords)
+		
+		encodeWordOrDelimiter(↓ wordOrDelimiter, ↓↑ encodedText)
+		
+	end while
+end Encode
+
+encodeWordOrDelimiter(↓ String wordOrDelimiter, ↓↑ String encodedText, ↓↑ Integer numberOfWords)
+	Integer pos = 0
+
+	if(isDelimiter(pos, wordOrDelimiter))
+		String encodedDelimiter = ""
+		encodeDelimiter(wordOrDelimiter, encodedDelimiter)
+		encodedText = encodedText + encodedDelimiter
+	else
+		if(numberOfWords % 5 != 0)
+			encodeWord(wordOrDelimiter, encodedWord)
+			encodedText = encodedText + encodedWord
+		else
+			encodedText = encodedText + wordOrDelimiter
+		numberOfWords++
+	end if
+end encodeWordOrDelimiter
+
+encodeDelimiter(↓ String wordOrDelimiter, ↑String encodedDelimiter)
+	if(wordOrDelimiter == ",")
+		encodedDelimiter = "@"
+	else if(wordOrDelimiter == ".")
+		encodedDelimiter = "#"
+	else if(wordOrDelimiter == " ")
+		encodedDelimiter =  randomSpaceCharacter())
+end encodeDelimiter
+
+encodeWord(↓ String wordOrDelimiter, ↑String encodedWord)
+	Integer pos = 0
+	if(wordOrDelimiter == "heute")
+		encodedWord = "nretsO"
+	else if(wordOrDelimiter == "Bahnhof")
+		encodedWord = "402U"
+	else if(wordOrDelimiter == "alle")
+		encodedWord = "hci"
+	else
+		while(pos < wordOrDelimiter.length)
+			encodedText = encodedText + wordOrDelimiter[(wordOrDelimiter.length - 1) - pos]
+			pos++
+		end while
+	end if
+end encodeWord
+
+char randomSpaceCharacter()
+	int rand = random(1,3)
+	if(rand == 1)
+		return '?'
+	else if(rand == 2)
+		return '%'
+	else if(rand == 3)
+		return '&'
+end randomSpaceCharacter
+
+extractWordOrDelimiter(↓ String text, ↓↑ Integer pos, ↑ String wordOrDelimiter)
+
+Boolean endOfWord = false
+wordOrDelimiter = ""
+	
+	if(isDelimiter(↓ pos, ↓ text))
+		string delimiter = ""
+		extractDelimiter(↓ text, ↓↑ pos, ↑ delimiter)
+		
+		wordOrDelimiter = delimiter
+	else
+		String word = ""
+		extractWord(↓ text, ↓↑ pos, ↑ word)
+		
+		wordOrDelimiter = word
+		
+	end if	
+	
+end extractWordOrDelimiter
+		
+		
+Boolean isDelimiter(↓ Integer pos, ↓ String text)
+	if(text[pos] == ' ')
+		isDelimiter = true
+	else if(text[pos] == ',')
+		isDelimiter = true
+	else if(text[pos] == '.')
+		isDelimiter = true
+	end if
+end isDelimiter
+
+extractWord(↓ String text, ↓↑ Integer pos, ↑ String word)
+		word = text[pos]
+		pos++
+		
+		while(pos < text.length && isDelimiter(↓ pos, ↓ text) == false)
+			word = word + text[pos]
+			pos++
+		end while
+	
+end extractWord
+
+extractDelimiter(↓ String text, ↓↑ Integer pos, ↑ String delimiter)
+	delimiter = text[pos]
+	pos++
+	while(pos < text.length && text[pos] == delimiter)
+		pos++
+	end while
+	
+end extractDelimiter

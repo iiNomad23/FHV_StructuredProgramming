@@ -1,0 +1,50 @@
+
+
+getDayInYear(↓integer day, ↓string month, ↓integer year, ↑integer dayInYear)
+	if (day <= 0 || year <= 0) 
+		dayInYear = -1
+	else
+		string[] allMonths = {"jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez"}
+		
+		boolean monthInputOk = false
+		integer monthIndex = 0
+		integer i = 0
+		while (i < allMonths.length) 
+			if (allMonths[i] == toLower(↓month)) // toLower => convert all chars of the month string to lower chars
+				monthInputOk = true
+				monthIndex = i
+				break // jump out of the while
+			end if
+			i++
+		end while
+		
+		if (monthInputOk) 
+			boolean isLeapYear = false
+			leapYearChecker(↓year, ↕isLeapYear)
+		
+			integer[] daysInMonths = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
+			if (isLeapYear)
+				dayInMonths[1] = 29
+			end if
+			
+			if (day <= daysInMonths(monthIndex))
+				dayInYear = 0
+			
+				i = 0
+				while (i < monthIndex) 
+					dayInYear += dayInMonths[i]
+					i++
+				end while
+				
+				dayInYear += day
+			else 
+				dayInYear = -1
+			end if 
+		else 
+			dayInYear = -1
+		end if	
+	end if
+end getDayInYear
+			
+				
+	

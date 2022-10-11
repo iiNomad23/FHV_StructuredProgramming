@@ -1,0 +1,18 @@
+checkArrayEquality(↓integer[] firstArray, ↓integer[] secondArray, ↑boolean isEqual)
+	if (firstArray.length == secondArray.length)
+		isEqual = true
+		
+		integer i = 0
+		while (i < firstArray.length)
+			integer numOne = firstArray[i]
+			integer numTwo = secondArray[i]
+			
+			if (numOne != 0 && numTwo != 0 && (numOne * (-1)) != numTwo && numOne != numTwo) 
+				isEqual = false
+			end if
+			i++
+		end while
+	else 
+		isEqual = false
+	end if
+end checkArrayEquality

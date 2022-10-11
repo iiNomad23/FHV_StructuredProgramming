@@ -1,0 +1,6 @@
+﻿  backpackPaking.c
+  printWordStats.c
+  main.c
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_10\main.c(87,1): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
+  Generating Code...
+  Exercise_10.vcxproj -> C:\Users\marco\source\repos\Fist_study_C_program\Debug\Exercise_10.exe

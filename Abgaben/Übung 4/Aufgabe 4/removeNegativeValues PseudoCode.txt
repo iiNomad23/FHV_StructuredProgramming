@@ -1,0 +1,30 @@
+removeNegativeValues(↕integer[] values, ↑integer amountOfValidValues)
+	amountOfValidValues = 0
+
+	if (values.length > 0)
+		amountOfValidValues = values.length - 1
+	
+		integer i = 0
+		while (i < values.length - (values.length - amountOfValidValues))
+			if (values[i] < 0)
+				integer j = i
+			
+				while (j < amountOfValidValues)
+					values[j] = values[j + 1]
+					j++
+				end while
+				
+				values[amountOfValidValues] = null
+				amountOfValidValues--
+			else 
+				i++
+			end if
+		end while
+		
+		if (values[amountOfValidValues] < 0)
+			values[amountOfValidValues] = null
+		else 
+			amountOfValidValues++
+		end if
+	end if
+end removeNegativeValues

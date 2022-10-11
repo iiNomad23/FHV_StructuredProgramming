@@ -1,0 +1,14 @@
+﻿  exercise_7.c
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(132,72): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(138,73): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(138,89): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(144,70): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(151,65): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(151,83): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(154,84): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(157,84): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(160,66): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(160,83): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(163,66): warning C4305: 'function': truncation from 'double' to 'float'
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_7\exercise_7.c(391,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Exercise_7.vcxproj -> C:\Users\marco\source\repos\Fist_study_C_program\Debug\Exercise_7.exe

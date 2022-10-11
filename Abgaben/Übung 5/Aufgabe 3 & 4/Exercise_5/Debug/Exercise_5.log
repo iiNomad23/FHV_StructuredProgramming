@@ -1,0 +1,4 @@
+﻿  decToBin_russianMult.c
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_5\decToBin_russianMult.c(22,25): warning C4013: 'convertDecimalToBinary' undefined; assuming extern returning int
+C:\Users\marco\source\repos\Fist_study_C_program\Exercise_5\decToBin_russianMult.c(40,31): warning C4013: 'russianPeasantMultiplication' undefined; assuming extern returning int
+  Exercise_5.vcxproj -> C:\Users\marco\source\repos\Fist_study_C_program\Debug\Exercise_5.exe

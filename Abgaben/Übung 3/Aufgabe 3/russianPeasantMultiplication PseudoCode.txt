@@ -1,0 +1,14 @@
+russianPeasantMultiplication(↓integer multiplier, ↓integer multiplicand, ↑integer result) {
+	result = 0
+	
+	if (multiplier > 0 && multiplicand > 0)
+		while (multiplier >= 1)
+			if ((multiplier % 2) != 0)
+				result += multiplicand
+			end if			
+
+			multiplier /= 2
+			multiplicand += multiplicand
+		end while
+	end if 
+}
